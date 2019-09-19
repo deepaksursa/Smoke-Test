@@ -21,7 +21,7 @@ jobs:
             - ./node_modules
       - run: # download browser
           name: browser 
-          command: './node_modules/.bin/webdriver-manager start'      
+          command: './node_modules/.bin/webdriver-manager update'      
       - run: # run tests
           name: test
           command: npm test
