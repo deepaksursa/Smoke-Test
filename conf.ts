@@ -8,10 +8,13 @@ exports.config = {
 
     // Capabilities to be passed to the webdriver instance.
     capabilities: {
-        'browserName': 'chrome',
-        chromeOptions: {
-            args: ['--disable-gpu']
-        }
+        'browserName': 'firefox',
+        'moz:firefoxOptions': {
+            args: [ "--headless" ]
+          }
+        // chromeOptions: {
+        //     args: ['--headless','--disable-gpu', '--window-size=800x600','--no-sandbox']
+        // }
     },
 
     // If you have one app to test then you can mention the base url here.
