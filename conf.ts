@@ -8,9 +8,9 @@ exports.config = {
 
     // Capabilities to be passed to the webdriver instance.
     capabilities: {
-        'browserName': 'firefox',
+        'browserName': 'chrome',
         chromeOptions: {
-            args: ['--headless','--disable-gpu']
+            args: ['--disable-gpu']
         }
     },
 
