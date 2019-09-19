@@ -20,8 +20,11 @@ jobs:
           paths:
             - ./node_modules
       - run: # download browser
-          name: browser 
+          name: browser Update
           command: './node_modules/.bin/webdriver-manager update'      
+      - run: # browser run
+          name: browser start
+          command: './node_modules/.bin/webdriver-manager start'       
       - run: # run tests
           name: test
           command: npm test
