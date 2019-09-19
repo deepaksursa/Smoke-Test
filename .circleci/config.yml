@@ -19,6 +19,9 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - ./node_modules
+      - run: # download browser
+          name: browser 
+          command: './node_modules/.bin/webdriver-manager start'      
       - run: # run tests
           name: test
           command: npm test
