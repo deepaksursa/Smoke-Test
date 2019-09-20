@@ -31,7 +31,7 @@ jobs:
           command: npm test
       - run: # For TestQuality
           name: TestQuality
-          command: 'sudo chmod 755 testquality-linux:' 
+          command: 'sudo chmod 755 testquality-linux;' 
           command: './testquality-linux login deepak@sursatech.com Sunday@2015 --save;'
           command: './testquality-linux upload_test_run 'junitresults.xml' --project_name='QA LINT' --plan_name='Smoke Test Plan';'  
       # - run: # run coverage report
