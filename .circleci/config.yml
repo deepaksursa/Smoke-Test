@@ -36,8 +36,8 @@ jobs:
           name: TestQuality Login
           command: './testquality-linux login deepak@sursatech.com Sunday@2015 --save'  
       - run: 
-          name: "TestQuality  File Upload"
-          command: "./testquality-linux upload_test_run junitresults.xml --project_name='QA LINT' --plan_name=Smoke Test Plan'"
+          name: TestQuality  File Upload
+          command: ./testquality-linux upload_test_run junitresults.xml --project_name='QA LINT' --plan_name='Smoke Test Plan'
     
 
       # - run: # run coverage report
