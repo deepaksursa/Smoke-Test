@@ -31,7 +31,7 @@ jobs:
           command: npm test
       - run: # For TestQuality
         name: Login to TestQuality
-        command: ./testquality-linux login deepak@sursatech.com Sunday@2025 --save  
+        command: ./testquality-linux login deepak@sursatech.com Sunday@2015 --save  
       # - run: # run coverage report
       #     name: code-coverage
       #     command: './node_modules/.bin/nyc report --reporter=text-lcov'
