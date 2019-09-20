@@ -32,7 +32,11 @@ jobs:
       - run: # For TestQuality
           name: TestQuality
           command: 'sudo chmod 755 testquality-linux;' 
+      - run: #TestQuality login
+          name: TestQuality  Login   
           command: './testquality-linux login deepak@sursatech.com Sunday@2015 --save;'
+       - run: #TestQuality File Upload
+          name: TestQuality  File Upload     
           command: './testquality-linux upload_test_run 'junitresults.xml' --project_name='QA LINT' --plan_name='Smoke Test Plan';'  
       # - run: # run coverage report
       #     name: code-coverage
